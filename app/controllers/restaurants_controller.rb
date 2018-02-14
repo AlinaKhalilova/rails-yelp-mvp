@@ -1,6 +1,6 @@
 
 class RestaurantsController < ApplicationController
-  before_action :set_restaurant, only: [:show, :edit, :update, :destroy]
+  before_action  only: [:show, :edit, :update, :destroy]
 
   def top
     @restaurants = Restaurant.where(stars: 5)
